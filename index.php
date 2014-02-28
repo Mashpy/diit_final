@@ -17,7 +17,7 @@
                 <th>patient_record</th>
                 <th>appoint_date</th>
                 <th>arrival_date</th>
-              
+              <th>Doctor Name</th>
             </thead>
             <tbody>
             <?php
@@ -25,7 +25,7 @@
                 
                 if($_POST)
                 {
-                //    $xml->addAttribute('docname', 'aDoc');
+                //    $xml->addAttribute('type', 'documentary');
                     $newpatient = $xml->addChild('patient');
                     foreach($_POST as $key=>$value)
                         $newpatient->addAttribute($key, $value);
@@ -35,15 +35,19 @@
                 
                 $id = 0;
                 foreach($xml->patient as $patient)
-                {                    
+                {
+                    $total = 0;
                     echo '<tr>'.PHP_EOL;
                     foreach($patient->attributes() as $key => $value)
                     {
-                        if($key=='id')
+                        if($key[0]=='d')
+                            $total += intval($value);
+                        else if($key=='id')
                             $id = intval($value);
                         echo '<td>'.$value.'</td>'.PHP_EOL;
                     }
 
+                    echo '</tr>'.PHP_EOL;
                 }
             ?>
             </tbody>
@@ -51,18 +55,20 @@
         <h3>insert</h3>
         <form name="input" method="post">
             <input type="text" name="id" placeholder="Enter id" value="<? echo $id+1; ?>"/><br/>
-            <input type="text" name="type" placeholder="Enter type"/><br/>
             <input type="text" name="name" placeholder="Enter name"/><br/>
-            <?
-                $days = array('sun', 'mon', 'tue', 'wed', 'thu', 'fri');
-                foreach($days as $day)
-                {
-                    ?><input type="text" name="d<? echo $day; ?>" placeholder="Enter hour on <? echo $day; ?>" value="1"/><br/><?
-                }
-            
-            ?>
+             <input type="text" name="birth" placeholder="Enter birth"/><br/>
+              <input type="text" name="phone" placeholder="Enter phone"/><br/>
+               <input type="text" name="address" placeholder="Enter address"/><br/>
+                <input type="text" name="brief" placeholder="Enter brief"/><br/>
+<input type="text" name="patient_record" placeholder="Enter patient_record"/><br/>
+<input type="text" name="appoint_date" placeholder="Enter appoint_date"/><br/>
+<input type="text" name="arrival_date" placeholder="Enter arrival_date"/><br/>
+<input type="text" name="doctor_name" placeholder="Enter Doctor Name"/><br/>
             <input type="submit" value="insert"/>
         </form>
+            </tbody>
+        </table>
+
 </div>
 
 <?php include('footer.php'); ?>
