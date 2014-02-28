@@ -25,7 +25,7 @@
                 
                 if($_POST)
                 {
-                    $xml->addAttribute('docname', 'aDoc');
+                //    $xml->addAttribute('docname', 'aDoc');
                     $newpatient = $xml->addChild('patient');
                     foreach($_POST as $key=>$value)
                         $newpatient->addAttribute($key, $value);
@@ -39,7 +39,8 @@
                     echo '<tr>'.PHP_EOL;
                     foreach($patient->attributes() as $key => $value)
                     {
-
+                        if($key=='id')
+                            $id = intval($value);
                         echo '<td>'.$value.'</td>'.PHP_EOL;
                     }
 
