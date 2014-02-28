@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>Link Shorten Service | Mashpy Says</title>
+  <title>DoctorsCare</title>
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 <link href="style.css" rel="stylesheet" media="screen"> 	 
 </head>
  <div class="navbar-inner">
  </div>
 <div id="">
-       <h1 style="text-align:center">Welcome to Link shorten service</h1>
+       <h1 style="text-align:center">Welcome to DoctorsCare</h1>
 <hr>
 <body>

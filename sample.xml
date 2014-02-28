@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patients docname="a">
+    <patient id="2" name="minhaz" birth="9/10/2000" phone="834" address="7ff" brief="brief details" patient_record="he is good" appoint_date="4/10/1233" arrival_date="9/10/03"/>
+    <patient id="2" name="minhaz" birth="9/10/2000" phone="834" address="7ff" brief="brief details" patient_record="he is good" appoint_date="4/10/1233" arrival_date="3/4/44"/>
+    <patient id="2" name="minhaz" birth="9/10/2000" phone="834" address="7ff" brief="brief details" patient_record="he is good" appoint_date="4/10/1233" arrival_date="4/34/35"/>
+    <patient id="2" name="minhaz" birth="9/10/2000" phone="834" address="7ff" brief="brief details" patient_record="he is good" appoint_date="4/10/1233" arrival_date="34/543/43"/>
+<patient id="3" type="dgf" name="gd" dsun="1" dmon="1" dtue="1" dwed="1" dthu="1" dfri="1"/><patient id="4" type="dgf" name="gd" dsun="1" dmon="1" dtue="1" dwed="1" dthu="1" dfri="1"/><patient id="4" type="dgf" name="gd" dsun="1" dmon="1" dtue="1" dwed="1" dthu="1" dfri="1"/><patient id="4" type="dgf" name="gd" dsun="1" dmon="1" dtue="1" dwed="1" dthu="1" dfri="1"/></patients>
