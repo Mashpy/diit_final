@@ -52,7 +52,7 @@
             ?>
             </tbody>
         </table>
-        <h3>insert</h3>
+        <h3>Patient Appoinment</h3>
         <form name="input" method="post">
             <input type="text" name="id" placeholder="Enter id" value="<? echo $id+1; ?>"/><br/>
             <input type="text" name="name" placeholder="Enter name"/><br/>
@@ -64,6 +64,15 @@
 <input type="text" name="appoint_date" placeholder="Enter appoint_date"/><br/>
 <input type="text" name="arrival_date" placeholder="Enter arrival_date"/><br/>
 <input type="text" name="doctor_name" placeholder="Enter Doctor Name"/><br/>
+<select name="doctor_name">
+  <option value="aDoctor">aDoctor</option>
+  <option value="bDoctor">bDoctor</option>
+  <option value="cDoctor">cDoctor</option>
+  <option value="dDoctor">dDoctor</option>
+  <option value="eDoctor">eDoctor</option>
+  <option value="fDoctor">fDoctor</option>
+  <option value="gDoctor">gDoctor</option>
+</select></br>
             <input type="submit" value="insert"/>
         </form>
             </tbody>
