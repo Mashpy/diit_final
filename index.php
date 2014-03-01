@@ -40,8 +40,7 @@
                     echo '<tr>'.PHP_EOL;
                     foreach($patient->attributes() as $key => $value)
                     {
-                        if($key[0]=='d')
-                            $total += intval($value);
+                      
                         else if($key=='id')
                             $id = intval($value);
                         echo '<td>'.$value.'</td>'.PHP_EOL;
@@ -63,7 +62,6 @@
 <input type="text" name="patient_record" placeholder="Enter patient_record"/><br/>
 <input type="text" name="appoint_date" placeholder="Enter appoint_date"/><br/>
 <input type="text" name="arrival_date" placeholder="Enter arrival_date"/><br/>
-<input type="text" name="doctor_name" placeholder="Enter Doctor Name"/><br/>
 <select name="doctor_name">
   <option value="aDoctor">aDoctor</option>
   <option value="bDoctor">bDoctor</option>
